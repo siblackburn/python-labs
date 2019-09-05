@@ -5,3 +5,8 @@ Use a for loop that demonstrates the use of the range function.
 
 '''
 
+output = 0
+
+for number in range(1, 50):
+    output = number ** 2
+    print(output)

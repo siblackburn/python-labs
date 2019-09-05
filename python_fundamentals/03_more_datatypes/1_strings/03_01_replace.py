@@ -9,7 +9,6 @@ Result: #ore python progra##ing please
 '''
 
 string_input = input("Tell me something about Python")
-Symbol = input("enter a symbol")
+symbol = input("enter a symbol")
 
-replace = string_input[1]
-print(replace)
+print(string_input.replace(string_input[0],symbol,10))

@@ -6,3 +6,15 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+
+user = input("Who's your favourite actor?")
+
+dictionary = dict()
+
+print(user)
+
+for letters in user:
+    dictionary[letters] = user.count(letters)
+
+print(dictionary)
+

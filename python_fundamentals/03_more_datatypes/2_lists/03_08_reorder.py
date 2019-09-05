@@ -7,3 +7,14 @@ Example input: 1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+
+#method 1:
+
+numbers = input("enter ten whole numbers: ").split()
+
+numbers_list = list(numbers)
+
+print(numbers_list)
+
+print(numbers_list[3], numbers_list[5], numbers_list[7], numbers_list[9])
+print(numbers_list[8], numbers_list[6], numbers_list[4], numbers_list[2], numbers_list[0])

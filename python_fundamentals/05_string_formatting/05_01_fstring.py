@@ -18,3 +18,12 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+
+print(type(famous_quotes))
+
+result = {}
+for dictionary in famous_quotes:
+    result.update(famous_quotes)
+
+print(famous_quotes)
+

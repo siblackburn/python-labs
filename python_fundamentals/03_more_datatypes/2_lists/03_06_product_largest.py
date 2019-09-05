@@ -9,3 +9,24 @@ that we haven't looked at yet. See if you can figure it out, otherwise
 come back to this task after you have learned about loops)
 
 '''
+#method 1:
+
+numbers = input("enter ten whole numbers: ").split()
+
+numbers_list = list(numbers)
+
+print(type(numbers_list))
+print(numbers_list)
+
+largest_number = max(numbers_list)
+print("The largest number is: ", largest_number)
+
+
+count = 1
+
+while count < len(numbers_list):
+    count * numbers_list[count]
+    count += 1
+
+else:
+    0
