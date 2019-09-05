@@ -18,3 +18,42 @@ def get_hand(hand):
     # for example if the variable hand is 0, it should return the string "scissor"
     pass
 '''
+#Define user input and computer input. Also creating a dictionary at a global level so I can recall the dictionary during when outputting the answer
+
+user_input = input("Please choose rock paper or scissors:")
+
+from random import randrange
+computer_input = randrange(2)
+
+interpreter = {"scissors": 0, "rock": 1, "paper": 2}
+
+# defining the function. Using if statements to make sure all conitions are met
+def get_hand(hand):
+    winner = []
+    draw = "draw"
+    user_win = "Congratulations you win!"
+    computer_win = "unlucky you've lost"
+    hand = interpreter[user_input]
+    if hand == computer_input:
+        winner.append(draw)
+    elif hand == 0 and computer_input == 2:
+        winner.append(user_win)
+    elif computer_input == 0 and hand == 2:
+        winner.append(computer_win)
+    elif hand > computer_input:
+        winner.append(user_win)
+    elif computer_input > hand:
+        winner.append(computer_win)
+    else:
+        print("Please choose rock paper or scissors")
+    return winner
+
+
+
+output = get_hand(user_input)
+print("You played ", user_input)
+for key, value in interpreter.items():
+    if value == computer_input:
+        print("The computer played ", key)
+print(output)
+
