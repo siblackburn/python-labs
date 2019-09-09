@@ -43,6 +43,8 @@ print("the average value is:", z)
 
 '''
 How can I then use the same function to work on a different input (e.g. user_input2)?
+Could put the function in a for loop, looking up inputs thar are in a list
+
 def a function that does something(and what you want to do it on):
     some calculation involving the inputs you want to do it on
     return the outputs x, y, z

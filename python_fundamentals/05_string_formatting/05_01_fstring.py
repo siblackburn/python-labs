@@ -23,7 +23,15 @@ print(type(famous_quotes))
 
 result = {}
 for dictionary in famous_quotes:
-    result.update(famous_quotes)
+    quote = dictionary["quote"]
+    full_name = dictionary["full_name"]
+    split_name = full_name.split()
+    first_name = split_name[0]
+    surname = split_name[1]
+    print(f'"{quote}" - {surname} {first_name}')
 
-print(famous_quotes)
+'''
+Need to change logic to capture Edsger's proper name
+'''
+
 
