@@ -57,18 +57,22 @@ class Deck():
             res.append(str(card))
         return '\n'.join(res)
 
+
+my_deck = Deck()
+print(my_deck)
+
 # don't understand how to now check that we have a full deck of cards to call from. Shouldn't self.cards now contain 52 cards?
 # when i try to print self.cards is says code is unreachable
 
 #here we're defining functions that might be useful for the game. e.g. picking a random card, adding a card etc
-    def pop_card(self):
-        return self.cards.pop()
+def pop_card(self):
+    return self.cards.pop()
 
-    def add_card(self, card):
-        self.cards.append(card)
+def add_card(self, card):
+    self.cards.append(card)
 
-    def shuffle(self):
-        random.shuffle(self.cards)
+def shuffle(self):
+    random.shuffle(self.cards)
 
 
 
@@ -97,5 +101,16 @@ class Hand(Deck):
         print(hand)
 
 
+
+'''
+example of how to call a comparison between 2 hands
+hand1 = Card(1,2)
+hand2 = Card(2,4)
+
+if hand1.rank > hand2.rank:
+    print("win")
+else:
+    print("lose")
+'''
 
 
