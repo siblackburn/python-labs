@@ -1,4 +1,4 @@
-z'''
+'''
 CLASSES AND INHERITANCE
 =======================
 
@@ -18,3 +18,24 @@ CLASSES AND INHERITANCE
     Any class attributes you could add?
 
 '''
+
+class Movie:
+
+    def __init__(self, year, title):
+        self.year = year
+        self.title = title
+
+class RomCom(Movie):
+    def __init__(self, year, title):
+        super().__init__(self, year, title)
+
+
+class ActionMovie(Movie):
+
+    def __init__(self, year, title, pg = 13):
+        super().__init__(year, title)
+        self.pg = pg
+
+avengers = ActionMovie(2008, "avengers assemble", 15)
+
+print(f'The best movie is {avengers.title} which is rated pg {avengers.pg}')

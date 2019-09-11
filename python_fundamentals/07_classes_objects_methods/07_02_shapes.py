@@ -26,7 +26,7 @@ class circle():
         self.circumference = round(2 * pi * radius,2)
 
     def __str__(self):
-        return f"The area of the circle is, {self.area}, whereas the circumference is {self.circumference1}"
+        return f"The area of the circle is, {self.area}, whereas the circumference is {self.circumference}"
 
 
 disc = circle(3)
