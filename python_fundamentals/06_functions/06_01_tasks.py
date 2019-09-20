@@ -15,7 +15,6 @@ while user < 0 or user > 1000000000:
     user = int(input("input a number"))
 else:
 
-
     def test(n):
         if user % mod1 == 0 or user % mod2 == 0:
             print("TRUE")
@@ -23,8 +22,8 @@ else:
             print("FALSE")
         return
 
-print(test(user))
-
+output = test(user)
+print(output)
 
 # take in a number from the user between 1 and 1,000,000,000
 

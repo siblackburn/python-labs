@@ -10,3 +10,11 @@ In your CodingNomads folder create a new folder. Inside of that folder:
 7. Create a new virtual environment and install the packages from the requirements.txt file.
 
 '''
+
+# Completed all of this in a separate project using Pycharm
+'''
+Note to self: can use the terminal window in Pycharm to create requirements.txt by typing:
+pip freeze > requirements.txt
+
+can also use deactivate 
+'''

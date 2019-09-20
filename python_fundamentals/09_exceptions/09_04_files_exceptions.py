@@ -23,3 +23,34 @@ BONUS CHALLENGE: write a custom Exception that inherits from Exception and raise
 first 100 characters of any of the files contain the string "Prince".
 
 '''
+
+with open("C:/Users/sibla/Documents/CodingNomads/labs/python_fundamentals/09_exceptions/books/war_and_peace.txt", encoding="utf8") as wap:
+    # contents = wap.read()
+    # print(contents)
+    pass
+
+
+with open("C:/Users/sibla/Documents/CodingNomads/labs/python_fundamentals/09_exceptions/books/crime_and_punishment.txt", "w") as cap:
+    cap.write("hi")
+    cap.close()
+
+first_letters = []
+with open("C:/Users/sibla/Documents/CodingNomads/labs/python_fundamentals/09_exceptions/books/crime_and_punishment copy.txt", encoding="utf8") as cap2:
+    print(cap2.read(2))
+
+    # for words in cap2:
+    #     first_letters.append(cap2[0])
+    # print(first_letters)
+
+'''
+import fileinput
+import sys
+
+files = fileinput.input("C:/Users/sibla/Documents/CodingNomads/labs/python_fundamentals/09_exceptions/books")
+output = ()
+
+for words in files:
+    if 1 > 0:
+        pass
+'''
+

@@ -4,3 +4,11 @@ Adapt your Generator expression from the previous Exercise
 What numbers do you get?
 
 '''
+
+gen = (i for i in range(1,20000))
+
+for i in gen:
+    if i % 1111 == 0:
+        result = i // 1111
+
+        print(result)

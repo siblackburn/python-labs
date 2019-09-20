@@ -8,3 +8,24 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+
+while True:
+
+    try:
+
+        number1 = int(input("Enter a number: "))
+        number2 = int(input("Enter another number:"))
+        break
+        # if type(number1) == int and type(number2) == int:
+        #     break
+    except ValueError:
+        print("You should have entered 2 numbers. PLease try again")
+        print(ValueError)
+
+
+
+
+calc = number2 // number1
+
+print(calc)

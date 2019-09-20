@@ -8,3 +8,7 @@ Then open up your online shop ;)
 
 colors = ["neon orange", "spring green"]
 sizes = ["S", "M", "L"]
+
+
+new_sizes = [s +" " + c for c in colors for s in sizes]
+print(f"our new store stocks: {new_sizes}")

@@ -59,7 +59,8 @@ class Deck():
 
 
 my_deck = Deck()
-print(my_deck)
+print(my_deck) # this prints the total deck, as we've compiled it above.
+# we create deck, then we print that decks .cards. deck is different to Deck. Deck is the class
 
 # don't understand how to now check that we have a full deck of cards to call from. Shouldn't self.cards now contain 52 cards?
 # when i try to print self.cards is says code is unreachable
@@ -74,10 +75,6 @@ def add_card(self, card):
 def shuffle(self):
     random.shuffle(self.cards)
 
-
-
-    card1 = Card(2,11)
-    print(card1)
 
 #hand of cards class inherits methods from Deck class. If we write another init, it will overwrite the parents init
 

@@ -4,7 +4,8 @@ at least one other function and use the return value to do something.
 
 '''
 
-
+def four(x):
+    return cube(x) * x
 
 def cube(x):
     return sq(x) * x
@@ -12,8 +13,7 @@ def cube(x):
 def sq(x):
     return x * x
 
-def four(x):
-    return cube(x) * x
+
 
 number = 5
 

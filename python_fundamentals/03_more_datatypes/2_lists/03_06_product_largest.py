@@ -18,10 +18,6 @@ numbers_list = list(numbers)
 print(type(numbers_list))
 print(numbers_list)
 
-largest_number = max(numbers_list)
-print("The largest number is: ", largest_number)
-
-
 count = 1
 
 while count < len(numbers_list):
@@ -30,3 +26,10 @@ while count < len(numbers_list):
 
 else:
     0
+
+
+
+largest_number = max(numbers_list)
+print("The largest number is: ", largest_number)
+
+

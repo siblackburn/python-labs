@@ -28,6 +28,23 @@ print("the average value is:", z)
 
 script = input("enter 5 numbers: ")
 
+while True:
+    try:
+        if len(script) != 5:
+            print(f"Enter 5 numbers please! you entered {len(script)}")
+
+
+    except TypeError:
+        print("please enter whole numbers!")
+
+    except Exception:
+        print("are you sure you entered that right?! try again...")
+
+    else:
+        break
+
+
+
 def stats(numbers):
     numbers = list(map(int, script.split(" ")))
     maximum = max(numbers)
